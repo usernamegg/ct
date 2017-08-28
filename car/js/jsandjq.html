@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js和jquery</title>
+	<script type="text/javascript" src="js/jquery.1.10.2.js"></script>
+</head>
+<body>
+			<h1>kkkkkkkkk</h1>
+			<h1>kkkkkkkkk</h1>
+			<h1>kkkkkkkkk</h1>
+			<h1>kkkkkkkkk</h1>
+			<h1>kkkkkkkkk</h1>
+			<h1>kkkkkkkkk</h1>
+			<h1>kkkkkkkkk</h1>
+			<h1>kkkkkkkkk</h1>		
+</body>
+<script type="text/javascript">
+$("h1").each(function(i){
+     $("h1").get()[i].setAttribute("num",i+1);
+
+})
+$("h1").click(function(){
+	this.innerHTML=this.getAttribute("num");
+
+})
+</script>
+</html>

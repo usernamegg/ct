@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="keywords" content="自适应，布局不变自适应">
+	<meta name="description" content="自适应是为了解决如何才能在不同大小的设备上呈现同样的网页，但屏幕过小还是影响观看，响应式正是为了解决这个问题而衍生出来的概念。它可以自动识别屏幕宽度、并做出相应调整的网页设计，布局和展示的内容可能会有所变动">
+	<title>自适应网站</title>
+	<!-- 老式浏览器 支持性-->
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script> 
+	<!-- 如果屏幕宽度在400像素到600像素之间，则加载smallScreen.css文件 -->
+	<link rel="stylesheet" type="text/css"  
+　　　　media="screen and (min-width: 400px) and (max-device-width: 600px)"  
+　　　　href="smallScreen.css" />  
+	<style type="text/css">
+		@media  screen and (max-device-width: 400px) {  
+  
+　　　　.column {  
+　　　　　　float: none;  
+　　　　　　width:auto;  
+　　　　}  
+  
+　　　　#sidebar {  
+　　　　　　display:none;  
+　　　　}  
+  
+　　}  
+
+/*图片的自适应*/
+img { max-width: 100%;}  
+/*老版本的IE不支持max-width，所以只好写成：*/
+img { width: 100%; } 
+/*此外，windows平台缩放图片时，可能出现图像失真现象。这时，可以尝试使用IE的专有命令：*/
+img { -ms-interpolation-mode: bicubic; } 
+</head>
+<body>
+	
+</body>
+</html>

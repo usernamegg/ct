@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js和jquery</title>
+	<script type="text/javascript" src="js/jquery.1.10.2.js"></script>
+	<style type="text/css" media="screen">
+	/*添加字体*/
+		@font-face {
+  font-family: 'MyNewFont';   /*字体名称*/
+  src: url('font.ttf');       /*字体源文件*/
+}
+	</style>
+</head>
+<body>
+			<h1>kkkkkkkkk</h1>
+			<h1>kkkkkkkkk</h1>
+			<h1>kkkkkkkkk</h1>
+			<h1>kkkkkkkkk</h1>
+			<h1>kkkkkkkkk</h1>
+			<h1>kkkkkkkkk</h1>
+			<h1>kkkkkkkkk</h1>
+			<h1>kkkkkkkkk</h1>		
+</body>
+<script type="text/javascript">
+// js 方法
+/*$("h1").each(function(i){
+     $("h1").get()[i].setAttribute("num",i+1);
+
+})
+$("h1").click(function(){
+	this.innerHTML=this.getAttribute("num");
+
+})
+*/
+// jquery方法  attr()给标签加属性
+/*$("h1").each(function(i){
+     $(this).attr({"num":i+1});
+
+})
+$("h1").click(function(){
+	$(this).html($(this).attr("num"));
+
+})*/
+
+//  data()  给对象加属性
+    $("h1").each(function(i){
+     $(this).data({"num":i+1});
+
+})
+$("h1").click(function(){
+	$(this).html($(this).data("num"));
+
+})
+</script>
+</html>
